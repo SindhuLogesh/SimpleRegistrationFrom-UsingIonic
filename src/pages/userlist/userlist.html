@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      User Details
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+    <ion-list class="thumbnailList" *ngFor="let userdetails of users;">
+        <ion-item>
+          <h2>Name:{{userdetails.name}}</h2>
+          <h2>Gender:{{userdetails.gender}}</h2>
+          <h2>DOB:{{userdetails.dob}}</h2>
+          <h2>Email:{{userdetails.email}}</h2>
+          <h2>Address:{{userdetails.address}}</h2>
+          <h2>Phoneno:{{userdetails.phoneno}}</h2>
+        </ion-item>
+      </ion-list>
+    
+</ion-content>

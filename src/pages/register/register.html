@@ -1,0 +1,55 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Register</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <h2>Create New User</h2>
+  <div>
+    <!-- Name -->
+    <ion-item class="field">
+      <ion-label>
+        <ion-icon name="person"></ion-icon>
+      </ion-label>
+      <ion-input type="text" [(ngModel)]="user.name" id="nameField" placeholder="Your Name"></ion-input>
+    </ion-item>
+    <!--Gender-->
+    <ion-item>
+      <ion-label >Gender</ion-label>
+        <ion-select [(ngModel)]="user.gender">
+          <ion-option value="Female">Female</ion-option>
+          <ion-option value="Male">Male</ion-option>
+          <ion-option value="Other">Other</ion-option>
+        </ion-select>
+    </ion-item>
+     <!-- email -->
+     <ion-item class="field">
+      <ion-input type="date" [(ngModel)]="user.dob" placeholder="Date Of Birth"></ion-input>
+    </ion-item>
+
+    <!-- email -->
+    <ion-item class="field">
+        <ion-label class="inputIcon">
+          <ion-icon name="mail"></ion-icon>
+        </ion-label>
+        <ion-input type="text" [(ngModel)]="user.mail" placeholder="Mail Id"></ion-input>
+      </ion-item>
+
+      <!-- description -->
+      <ion-item class="field">
+          <ion-label>
+            <ion-icon name="home"></ion-icon>
+          </ion-label>
+          <ion-input  type="text" [(ngModel)]="user.address" id="addressField" placeholder="Enter Permanent Address"></ion-input>
+        </ion-item>
+
+      <ion-item class="field">
+        <ion-label>
+          <ion-icon name="call"></ion-icon>
+        </ion-label>
+        <ion-input  type="text" [(ngModel)]="user.phoneno" id="phonenoField" placeholder="Mobile Number"></ion-input>
+      </ion-item>
+</div>
+      <button ion-button (click)="register()" [value]="user.image">Register</button>
+</ion-content>

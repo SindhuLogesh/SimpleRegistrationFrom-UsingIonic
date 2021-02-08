@@ -1,0 +1,7 @@
+{
+  "name": "sindhu-Ionic",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
